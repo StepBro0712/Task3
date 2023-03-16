@@ -1,0 +1,145 @@
+body {
+    background-image: url("../assets/background.jpg");
+    background-attachment: fixed;
+    margin: 0;
+}
+h1, h2{
+    text-align: center;
+    color: white;
+}
+.create_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.create{
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-top: 25px;
+    border: 0 solid black;
+    border-radius: 5px;
+    background-color: #000000;
+
+}
+.create-window {
+    width: 400px;
+    margin: 30px auto;
+}
+
+.create-body{
+
+    width: 400px;
+    height: 250px;
+    background-color: black;
+    border-radius: 5px;
+
+
+}
+.button{
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    padding: 10px 15px;
+    background-color: #332f2f;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+input {
+    border: 0 solid black;
+    background-color: #ffffff;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 200px;
+}
+button {
+    border: 0 solid black;
+    background-color: #ffffff;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.notes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+
+}
+.note-wrap{
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+    min-height: 600px;
+    margin-left: 300px;
+}
+.note > h1{
+    margin-left: 10px;
+}
+.note{
+    width: 350px;
+    margin: 20px 0 20px 90px;
+    text-align: center;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    background-color: black;
+
+}
+
+ul{
+    margin: 10px auto;
+    padding: 0;
+    width: 360px;
+    border-radius: 10px;
+    list-style-type: none;
+    color: white;
+
+
+}
+.note-name{
+    margin: 0 auto 20px auto;
+    padding: 10px 0 10px 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+.note-data{
+
+}
+.tasks{
+    display: flex;
+    list-style-type: disc;
+    align-items: center;
+    justify-content: center;
+    margin: -10px;
+}
+.tasks-2{
+    display: flex;
+    list-style-type: disc;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: -10px;
+}
+.checkbox{
+    opacity: 0;
+    margin-left: -118px;
+    margin-right: -88px;
+}
+.textDecoration{
+    text-decoration: line-through;
+}
+.error{
+    background-color: black;
+    height: 30px;
+    margin-top: 10px;
+    width: 1230px;
+    margin-left: 330px;
+}
