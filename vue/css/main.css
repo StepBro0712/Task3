@@ -15,23 +15,29 @@ h1, h2{
     align-items: center;
 }
 .create{
+    width: 300px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
     border: 0 solid black;
-    border-radius: 10px;
-    width: 300px;
-    height: auto;
+    border-radius: 5px;
     background-color: #444444;
+    font-weight: bold;
 }
 input {
+    width: 250px;
     border: 0 solid black;
     background-color: #ffffff;
     margin: 5px;
     padding: 5px;
-    border-radius: 3px;
-    width: 250px;
+    border-radius: 5px;
+    margin-left: -10px;
+
+}
+#title{
+    width: 245px;
 }
 button {
     border: 0 solid black;
@@ -65,12 +71,24 @@ button {
     background-color: #000000;
 }
 .tab-li{
-    margin: 20px 20px 0 20px;
+    margin: 30px;
     list-style-type: none;
     background-color: #444444;
+    color: white;
+    border-radius: 5px;
 }
 a{
+    font-size: 20px;
     cursor: pointer;
+    margin-left: -30px;
+    font-weight: bold;
+}
+
+p{
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: -40px;
+    font-weight: bold;
 }
 .tab-task > li{
     margin-bottom: 5px;
@@ -91,12 +109,28 @@ a{
     background-color: #ffffff;
 }
 #description{
-    width: 255px;
+    width: 245px;
     height: 80px;
     border-radius: 5px;
     resize: none;
     margin-bottom: 5px;
     margin-top: 5px;
+    margin-left: -10px;
+}
+title{
+    resize: none;
+    margin-left: -10px;
+    width: 250px;
+    border-radius: 5px;
+}
+submit{
+    width: 240px;
+}
+#reason{
+    resize: none;
+    margin-left: -10px;
+    width: 245px;
+    border-radius: 5px;
 }
 label{
     color: #ffffff;
@@ -129,7 +163,6 @@ label{
     margin: 0 10px 0 285px;
     font-weight: 700;
     color: white;
-
     background-color: #444444;
     text-decoration: none;
 }
@@ -144,12 +177,6 @@ label{
     padding: 10px 15px;
     background-color: #ffffff;
     border-radius: 10px;
-    color: #444444;
+    color: #000000;
     text-decoration: none;
-}
-#priority{
-    width: 260px;
-    height: 25px;
-    margin-top: 5px;
-    border-radius: 5px;
 }
