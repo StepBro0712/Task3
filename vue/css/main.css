@@ -67,14 +67,14 @@ button {
     cursor: pointer;
 }
 
-.notes{
+.tabs{
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin: 0 auto;
 
 }
-.note-wrap{
+.tab-wrap{
     display: flex;
     justify-content: space-around;
     width: 1200px;
@@ -84,7 +84,7 @@ button {
 .note > h1{
     margin-left: 10px;
 }
-.note{
+.board{
     width: 350px;
     margin: 20px 0 20px 90px;
     text-align: center;
