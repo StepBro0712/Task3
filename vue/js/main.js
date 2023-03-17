@@ -149,7 +149,7 @@ Vue.component( 'newNotes', {
                             <form class="create" @submit.prevent="onSubmit">
                                 <input id="name" v-model="name" type="text" placeholder="Название задачи" required maxlength="20">
                                 <input id="date" type="date">
-                                <textarea placeholder="Описание"></textarea>
+                                <textarea id="text" placeholder="Описание"></textarea>
                                 <input id="deadline" type="date">>
                                 <button type="submit">Create</button>
                             </form>
@@ -167,9 +167,33 @@ Vue.component( 'newNotes', {
             show: false,
         }
     },
+    methods:{
+        onSubmit() {
+            if (this.name && this.date && this.text && this.deadline){
+                let note = {
+                    name: this.name,
+                    tasks: [
+                        {name: this.date, readiness: false},
+                        {name: this.text, readiness: false},
+                        {name: this.deadline, readiness: false},
+                    ],
+                    status: 0,
+                }
+                eventBus.$emit('notes-submitted', note);
+                this.name = null;
+                this.date = null;
+                this.text = null;
+                this.deadline = null;
+            }else {
+                if(!this.name) this.errors.push("Name required.")
+                if(!this.date) this.errors.push("task_1 required.")
+                if(!this.text) this.errors.push("task_2 required.")
+                if(!this.deadline) this.errors.push("task_3 required.")
+            }
+        },
+
+    }
 })
-
-
 
 let app = new Vue({
     el: '#app',
@@ -177,3 +201,6 @@ let app = new Vue({
         name: 'Notes',
     }
 })
+
+
+
