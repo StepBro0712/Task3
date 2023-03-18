@@ -121,7 +121,7 @@ Vue.component('newBoard', {
             let tab = {
                 title: this.title,
                 description: this.description,
-                date: new Date().toLocaleDateString().split('.').reverse().join('-'),
+                date: new Date().toLocaleDateString(),
                 deadline: this.deadline,
                 edit: null,
                 editButton: false,
